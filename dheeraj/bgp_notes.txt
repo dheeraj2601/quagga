@@ -1,0 +1,13 @@
+
+CLI                                                     Table
+---------                                               --------
+
+show ip bgp nei x.x.x.x received-routes                 ADJ-IN table
+
+show ip bgp nei x.x.x.x routes                          LOC-RIB table
+
+show ip bgp nei x.x.x.x advertised-routes               ADJ-OUT table
+
+Show ip bgp                                             LOC-RIB for all neighbors
+
+
