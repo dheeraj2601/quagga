@@ -11,3 +11,18 @@ show ip bgp nei x.x.x.x advertised-routes               ADJ-OUT table
 Show ip bgp                                             LOC-RIB for all neighbors
 
 
+
+
+
+
+peer-group
+----------
+
+A peer-group is a set of BGP neighbors that shares the same outbound policy, where the inbound policies might be different.
+
+BGP peer groups are used to simplify configuration and to improve performance. It can be used when a router has a group of neighbors with the same update policies. The update is generated once per group rather than for each neighbor.
+
+
+When advertising updates, the routing table is inspected ONLY ONE TIME, sent to one peer-group member and then duplicated to all other members .
+
+
